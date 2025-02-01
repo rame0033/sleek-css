@@ -5,8 +5,7 @@ $theme:(
 );
 
 //Type face - card
-$sleek-font-card-heading: "Roboto", serif;
-$sleek-font-card-body: "Archivo", serif;
+$sleek-font-card:"Archivo", serif;
 
 // Font weights
 $font-bold: 700;
@@ -24,7 +23,8 @@ $font-small: 1.5rem;
 $font-xsmall: 1rem;
 
 //Utility classes
-$rounded: ("sm": 0.25rem,
+$rounded: ("x-sm": 0.25rem,
+    "sm": 0.35rem,
     "md": 0.5rem,
     "lg": 1rem,
     "xl": 2rem,

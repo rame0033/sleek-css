@@ -1,18 +1,23 @@
-@use 'sleek-font-card-heading';
-@use 'sleek-font-card-body';
+@use 'sleek-font-card';
 @use 'variables';
 
 //Card heading
 .card-title{
-    font-family: variables.$sleek-font-card-heading;
+    font-family: variables.$sleek-font-card;
     font-weight: variables.$font-bold;
     font-size: variables.$font-medium;
 }
 
 //Card body text
 .card-text{
-    font-family: variables.$sleek-font-card-body;
+    font-family: variables.$sleek-font-card;
     font-weight: variables.$font-regular;
     font-size: variables.$font-xsmall;
     padding: 1rem 0;
+}
+
+h2{
+    font-family: variables.$sleek-font-card;
+    font-weight: variables.$font-bold;
+    font-size: variables.$font-large;
 }
