@@ -4,9 +4,32 @@
 //Card
 .card{
     width:18rem;
-    border: 0.15rem;
+    border: 0.15rem solid map.get(variables.$theme, "light");
+    border-radius: map.get(variables.$rounded, "md");
+}
+
+.card-img-top{
+    border-top-left-radius: map.get(variables.$rounded, "sm");
+    border-top-right-radius: map.get(variables.$rounded, "sm");
 }
 
 .card-body{
     padding: 1rem 0.5rem; 
 }
+
+//button and links
+@mixin sleek-btn($btn-bg-color: map-get(variables.$theme, "dark"), $btn-text-color: map-get(variables.$theme , "light"), $btn-border-radius: map-get(variables.$rounded, "sm" )){
+    background-color: $btn-bg-color;
+    color: $btn-text-color;
+    padding: 0.15rem 0.30rem;
+    border-radius: $btn-border-radius;
+    border: 0.1rem solid $btn-text-color;
+    font-family: variables.$sleek-font-card-body;
+    font-weight: variables.$font-semi-bold;
+    font-size: variables.$font-xsmall;
+}
+
+//Card link
+a.btn.btn-primary{
+    @include sleek-btn
+};

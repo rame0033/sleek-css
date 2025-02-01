@@ -102,16 +102,33 @@ meter {
   font-family: "Archivo", serif;
   font-weight: 400;
   font-size: 1rem;
-  padding: 0.25rem 0 0.5rem 0;
+  padding: 1rem 0;
 }
 
 .card {
   width: 18rem;
-  border: 0.15rem;
+  border: 0.15rem solid #28190e;
+  border-radius: 0.5rem;
+}
+
+.card-img-top {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 
 .card-body {
   padding: 1rem 0.5rem;
+}
+
+a.btn.btn-primary {
+  background-color: #f8f9fa;
+  color: #28190e;
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.25rem;
+  border: 0.1rem solid #28190e;
+  font-family: "Archivo", serif;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
