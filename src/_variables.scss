@@ -1,0 +1,31 @@
+//Variables
+$theme:(
+    "light": #28190e,
+);
+
+//Type face - card
+$sleek-font-card-heading: "Roboto", serif;
+$sleek-font-card-body: "Archivo", serif;
+
+// Font weights
+$font-bold: 700;
+$font-semi-bold: 600;
+$font-med:500;
+$font-regular: 400;
+$font-light: 300;
+$font-xlight: 200;
+
+// Font sizes
+$font-xlarge: 4rem;
+$font-large: 3rem;
+$font-medium: 2rem;
+$font-small: 1.5rem;
+$font-xsmall: 1rem;
+
+//Utility classes
+$rounded: ("sm": 0.25rem,
+    "md": 0.5rem,
+    "lg": 1rem,
+    "xl": 2rem,
+    "xxl": 3rem,
+);

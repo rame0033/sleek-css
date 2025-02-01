@@ -1,0 +1,18 @@
+@use 'sleek-font-card-heading';
+@use 'sleek-font-card-body';
+@use 'variables';
+
+//Card heading
+.card-title{
+    font-family: variables.$sleek-font-card-heading;
+    font-weight: variables.$font-bold;
+    font-size: variables.$font-medium;
+}
+
+//Card body text
+.card-text{
+    font-family: variables.$sleek-font-card-body;
+    font-weight: variables.$font-regular;
+    font-size: variables.$font-xsmall;
+    padding: 0.25rem 0 0.5rem 0;
+}

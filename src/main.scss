@@ -1,3 +1,11 @@
 //Reset
 @use 'reset';
 
+//Typography
+@use 'typography';
+
+//Base - margins, paddings, border-radius, line-heights
+@use 'base';
+
+//Utility - margins, paddings, border-radius, line-heights
+@use 'utility';

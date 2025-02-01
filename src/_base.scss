@@ -1,0 +1,12 @@
+@use 'sass:map';
+@use 'variables';
+
+//Card
+.card{
+    width:18rem;
+    border: 0.15rem;
+}
+
+.card-body{
+    padding: 1rem 0.5rem; 
+}
