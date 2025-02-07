@@ -1,5 +1,10 @@
 //Variables
 $theme:(
+    "primary": #8096E4,
+    "secondary": #1BC0BA,
+    "info": #FFBD16,
+    "success": #F94681,
+    "danger": #ee2b2b,
     "light": #28190e,
     "dark": #f8f9fa,
 );
@@ -14,6 +19,10 @@ $font-med:500;
 $font-regular: 400;
 $font-light: 300;
 $font-xlight: 200;
+
+// Font styles
+$font-italic: italic;
+$font-underlined: underline;
 
 // Font sizes
 $font-xlarge: 4rem;

@@ -1,6 +1,65 @@
 @use 'sleek-font-card';
 @use 'variables';
 
+//Typography for text
+
+h1, h2, h3, h4 {
+    font-family: variables.$sleek-font-card;
+}
+
+h1 {
+    font-size: variables.$font-xlarge;
+    font-weight: variables.$font-regular;
+}
+
+.heading-container h2 {
+    font-size: variables.$font-large;
+    font-weight: variables.$font-regular;
+}
+
+h3 {
+    font-size: variables.$font-medium;
+    font-weight: variables.$font-regular;
+}
+
+h4 {
+    font-size: variables.$font-small;
+    font-weight: variables.$font-regular;
+}
+
+.heading-container {
+   display: flex;
+    justify-content: space-around; 
+}
+
+.heading-container p {
+    margin-bottom: 20px;
+    font-family: variables.$sleek-font-card;
+    font-size: variables.$font-xsmall;
+    font-weight: variables.$font-bold;
+}
+
+.heading-container .h4-reg {
+    font-size: variables.$font-small;
+    font-weight: variables.$font-regular;
+}
+
+.heading-container .h4-bold {
+    font-size: variables.$font-small;
+    font-weight: variables.$font-bold;
+}
+
+.heading-container .h4-italic {
+    font-size: variables.$font-small;
+    font-style: variables.$font-italic;
+}
+
+.heading-container .h4-hyper {
+    font-size: variables.$font-small;
+    text-decoration: underline;
+}
+
+
 //Card heading
 .card-title{
     font-family: variables.$sleek-font-card;

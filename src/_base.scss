@@ -1,6 +1,74 @@
 @use 'sass:map';
 @use 'variables';
 
+
+// Color
+
+.color-container{
+
+    .color-box{
+        display: flex;
+        gap: 5px;
+    }
+
+    .color-box p {
+        font-family: variables.$sleek-font-card;
+        font-size: variables.$font-xsmall;
+        font-weight: variables.$font-regular;
+        
+    }
+    
+    .color-pri{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: map.get(variables.$theme,"primary");
+        color: map.get(variables.$theme,"dark");
+        height: 200px;
+        width: 200px;
+    }
+
+    .color-sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: map.get(variables.$theme,"secondary");
+        color: map.get(variables.$theme,"dark");
+        height: 200px;
+        width: 200px;
+    }
+
+    .color-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: map.get(variables.$theme,"info");
+        color: map.get(variables.$theme,"dark");
+        height: 200px;
+        width: 200px;
+    }
+
+    .color-success{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: map.get(variables.$theme,"success");
+        color: map.get(variables.$theme,"dark");
+        height: 200px;
+        width: 200px;
+    }
+    .color-danger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: map.get(variables.$theme,"danger");
+        color: map.get(variables.$theme,"dark");
+        height: 200px;
+        width: 200px;
+    }
+   
+}
+
 //Card
 .card{
     width:18rem;

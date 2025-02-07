@@ -91,6 +91,62 @@ meter {
 /***
    End of CSS Reset
 ***/
+h1, h2, h3, h4 {
+  font-family: "Archivo", serif;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.heading-container h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.heading-container p {
+  margin-bottom: 20px;
+  font-family: "Archivo", serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.heading-container .h4-reg {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.heading-container .h4-bold {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.heading-container .h4-italic {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.heading-container .h4-hyper {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
 .card-title {
   font-family: "Archivo", serif;
   font-weight: 700;
@@ -108,6 +164,61 @@ h2 {
   font-family: "Archivo", serif;
   font-weight: 700;
   font-size: 3rem;
+}
+
+.color-container .color-box {
+  display: flex;
+  gap: 5px;
+}
+.color-container .color-box p {
+  font-family: "Archivo", serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.color-container .color-pri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8096E4;
+  color: #f8f9fa;
+  height: 200px;
+  width: 200px;
+}
+.color-container .color-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1BC0BA;
+  color: #f8f9fa;
+  height: 200px;
+  width: 200px;
+}
+.color-container .color-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFBD16;
+  color: #f8f9fa;
+  height: 200px;
+  width: 200px;
+}
+.color-container .color-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F94681;
+  color: #f8f9fa;
+  height: 200px;
+  width: 200px;
+}
+.color-container .color-danger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ee2b2b;
+  color: #f8f9fa;
+  height: 200px;
+  width: 200px;
 }
 
 .card {
