@@ -102,18 +102,25 @@
 @mixin sleek-link {
 
     color: map.get(variables.$theme , "light");
-
-
-
     text-decoration: underline;
     font-family: variables.$sleek-font-card;
     font-weight: variables.$font-semi-bold;
     font-size: variables.$font-xsmall;
 }
 
+// Button container
+.btn-container{   
+     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
 //Card link
 a.btn.btn-primary {
     @include sleek-link;
+    display: flex;
+    align-items: center;
 };
 
 button.btn-primary{
