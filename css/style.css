@@ -355,7 +355,7 @@ input[type=text], input[type=email], textarea {
 .list-container h4 {
   margin: 0 0 0 1rem;
 }
-.list-container .ulol {
+.list-container .ul-ol {
   display: flex;
   gap: 7rem;
 }
