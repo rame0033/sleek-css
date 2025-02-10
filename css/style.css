@@ -238,12 +238,21 @@ h2 {
   padding: 1rem 0.5rem;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
 a.btn.btn-primary {
   color: #28190e;
   text-decoration: underline;
   font-family: "Archivo", serif;
   font-weight: 600;
   font-size: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 button.btn-primary {
