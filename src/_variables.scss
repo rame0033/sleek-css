@@ -41,4 +41,9 @@ $rounded: ("x-sm": 0.25rem,
     "xxl": 3rem,
 );
 
+// Base Style (ol ul, and dl list)
+
+$list-ul: disc;
+$list-ol: upper-roman;
+$list-dl: ""; // No bullets or markers
 

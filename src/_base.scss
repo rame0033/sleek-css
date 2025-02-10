@@ -4,9 +4,9 @@
 
 // Color
 
-.color-container{
+.color-container {
 
-    .color-box{
+    .color-box {
         display: flex;
         gap: 5px;
     }
@@ -16,78 +16,79 @@
         font-size: variables.$font-xsmall;
         font-weight: variables.$font-regular;
     }
-    
-    .color-pri{
+
+    .color-pri {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: map.get(variables.$theme,"primary");
-        color: map.get(variables.$theme,"dark");
+        background-color: map.get(variables.$theme, "primary");
+        color: map.get(variables.$theme, "dark");
         height: 200px;
         width: 200px;
     }
 
-    .color-sec{
+    .color-sec {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: map.get(variables.$theme,"secondary");
-        color: map.get(variables.$theme,"dark");
+        background-color: map.get(variables.$theme, "secondary");
+        color: map.get(variables.$theme, "dark");
         height: 200px;
         width: 200px;
     }
 
-    .color-info{
+    .color-info {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: map.get(variables.$theme,"info");
-        color: map.get(variables.$theme,"dark");
+        background-color: map.get(variables.$theme, "info");
+        color: map.get(variables.$theme, "dark");
         height: 200px;
         width: 200px;
     }
 
-    .color-success{
+    .color-success {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: map.get(variables.$theme,"success");
-        color: map.get(variables.$theme,"dark");
+        background-color: map.get(variables.$theme, "success");
+        color: map.get(variables.$theme, "dark");
         height: 200px;
         width: 200px;
     }
-    .color-danger{
+
+    .color-danger {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: map.get(variables.$theme,"danger");
-        color: map.get(variables.$theme,"dark");
+        background-color: map.get(variables.$theme, "danger");
+        color: map.get(variables.$theme, "dark");
         height: 200px;
         width: 200px;
     }
-   
+
 }
 
 //Card
-.card{
-    width:18rem;
+.card {
+    width: 18rem;
     height: fit-content;
     border: 0;
     border-radius: map.get(variables.$rounded, "md");
-    box-shadow: 2px 5px 8px 1px rgba(0,0,0,0.12);
+    box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.12);
 }
 
-.card-img-top{
+.card-img-top {
     border-top-left-radius: map.get(variables.$rounded, "md");
     border-top-right-radius: map.get(variables.$rounded, "md");
 }
 
-.card-body{
-    padding: 1rem 0.5rem; 
+.card-body {
+    padding: 1rem 0.5rem;
 }
 
 //button and links
-@mixin sleek-btn($btn-bg-color: map-get(variables.$theme, "dark"), $btn-text-color: map-get(variables.$theme , "light"), $btn-border-radius: map-get(variables.$rounded, "sm" )){
+@mixin sleek-btn($btn-bg-color: map-get(variables.$theme, "dark"), $btn-text-color: map-get(variables.$theme, "light"), $btn-border-radius: map-get(variables.$rounded, "sm")) {
     background-color: $btn-bg-color;
     color: $btn-text-color;
     padding: 0.15rem 0.30rem;
@@ -99,7 +100,11 @@
 }
 
 @mixin sleek-link {
+
     color: map.get(variables.$theme , "light");
+
+
+
     text-decoration: underline;
     font-family: variables.$sleek-font-card;
     font-weight: variables.$font-semi-bold;
@@ -107,7 +112,7 @@
 }
 
 //Card link
-a.btn.btn-primary{
+a.btn.btn-primary {
     @include sleek-link;
 };
 
@@ -164,4 +169,60 @@ input[type="text"], input[type="email"], textarea {
 #email::placeholder,
 #message::placeholder {
     color:map.get(variables.$theme, "grey");
+}
+
+
+
+// Ul and Ol list
+
+.list-container {
+
+    h4 {
+        margin: 0 0 0 1rem;
+
+    }
+
+    .ulol {
+    display: flex;
+    gap: 7rem;
+    }
+
+
+    ol {
+        margin: 0 0 0 3rem;
+        padding: 1rem 0;
+        font-family: variables.$sleek-font-card;
+        font-size: variables.$font-xsmall;
+        font-weight: variables.$font-regular;
+        list-style: variables.$list-ol;
+    }
+
+    ul {
+        margin: 0 0 0 3rem;
+        padding: 1rem 0;
+        font-family: variables.$sleek-font-card;
+        font-size: variables.$font-xsmall;
+        font-weight: variables.$font-regular;
+        list-style: variables.$list-ul;
+    }
+
+    dl {
+        margin: 0 0 0 2rem;
+        padding: 1rem 0;
+        font-family: variables.$sleek-font-card;
+        font-size: variables.$font-xsmall;
+        font-weight: variables.$font-regular;
+        list-style: variables.$list-dl;
+    }
+
+    dt {
+        font-weight: variables.$font-bold;
+        font-size: variables.$font-small;
+    }
+
+    dd {
+        margin: 0 0 1rem 0; //margin: 0 0 0 1rem;
+    }
+
+
 }
