@@ -91,7 +91,7 @@ meter {
 /***
    End of CSS Reset
 ***/
-h1, h2, h3, h4 {
+body {
   font-family: "Archivo", serif;
 }
 
@@ -244,6 +244,103 @@ a.btn.btn-primary {
   font-family: "Archivo", serif;
   font-weight: 600;
   font-size: 1rem;
+}
+
+button.btn-primary {
+  background-color: #8096E4;
+  color: #f8f9fa;
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.35rem;
+  border: 0.1rem solid #f8f9fa;
+  font-family: "Archivo", serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+button.btn-secondary {
+  background-color: #F94681;
+  color: #f8f9fa;
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.35rem;
+  border: 0.1rem solid #f8f9fa;
+  font-family: "Archivo", serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+button.btn-info {
+  background-color: #FFBD16;
+  color: #28190e;
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.35rem;
+  border: 0.1rem solid #28190e;
+  font-family: "Archivo", serif;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 0;
+  padding: 0.5rem;
+}
+
+button.btn-success {
+  background-color: #1BC0BA;
+  color: #f8f9fa;
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.35rem;
+  border: 0.1rem solid #f8f9fa;
+  font-family: "Archivo", serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+button.btn-danger {
+  background-color: #ee2b2b;
+  color: #f8f9fa;
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.35rem;
+  border: 0.1rem solid #f8f9fa;
+  font-family: "Archivo", serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+button[type=submit] {
+  background-color: #28190e;
+  color: #f8f9fa;
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.35rem;
+  border: 0.1rem solid #f8f9fa;
+  font-family: "Archivo", serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+form {
+  max-width: 600px;
+  margin: 30px;
+  padding: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+input[type=text], input[type=email], textarea {
+  border: 1px solid #28190e;
+  padding: 6px 8px;
+  border-radius: 0.35rem;
+}
+
+#full-name::placeholder,
+#email::placeholder,
+#message::placeholder {
+  color: #6c757d;
 }
 
 .container {

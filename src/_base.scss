@@ -15,7 +15,6 @@
         font-family: variables.$sleek-font-card;
         font-size: variables.$font-xsmall;
         font-weight: variables.$font-regular;
-        
     }
     
     .color-pri{
@@ -100,7 +99,7 @@
 }
 
 @mixin sleek-link {
-    color: map-get(variables.$theme , "light");
+    color: map.get(variables.$theme , "light");
     text-decoration: underline;
     font-family: variables.$sleek-font-card;
     font-weight: variables.$font-semi-bold;
@@ -111,3 +110,58 @@
 a.btn.btn-primary{
     @include sleek-link;
 };
+
+button.btn-primary{
+    @include sleek-btn(map.get(variables.$theme, "primary"), map.get(variables.$theme, "dark"), map.get(variables.$rounded, "sm"));
+    padding:0.5rem;
+}
+
+button.btn-secondary{
+    @include sleek-btn(map.get(variables.$theme, "success"), map.get(variables.$theme, "dark"), map.get(variables.$rounded, "sm"));
+    padding: 0.5rem;
+}
+
+button.btn-info{
+    @include sleek-btn(map.get(variables.$theme, "info"), map.get(variables.$theme, "light"), map.get(variables.$rounded, "sm"));
+    border: 0;
+    padding: 0.5rem;
+}
+
+button.btn-success {
+    @include sleek-btn(map.get(variables.$theme,"secondary"), map.get(variables.$theme, "dark"), map.get(variables.$rounded, "sm"));
+    padding: 0.5rem;
+}
+
+button.btn-danger{
+    @include sleek-btn(map.get(variables.$theme, "danger"), map.get(variables.$theme, "dark"), map.get(variables.$rounded, "sm"));
+    padding: 0.5rem;
+}
+
+button[type="submit"]{
+    @include sleek-btn(map.get(variables.$theme, "light"), map.get(variables.$theme, "dark"), map.get(variables.$rounded, "sm"));
+    padding: 0.5rem;
+}
+//form 
+form {
+    max-width: 600px;
+    margin: 30px;
+    padding: 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 1px solid map.get(variables.$theme, "light");
+    padding: 6px 8px;
+    border-radius: map.get(variables.$rounded, "sm");
+}
+
+#full-name::placeholder,
+#email::placeholder,
+#message::placeholder {
+    color:map.get(variables.$theme, "grey");
+}
