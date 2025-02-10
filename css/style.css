@@ -246,7 +246,6 @@ a.btn.btn-primary {
   font-size: 1rem;
 }
 
-
 button.btn-primary {
   background-color: #8096E4;
   color: #f8f9fa;
@@ -342,6 +341,7 @@ input[type=text], input[type=email], textarea {
 #email::placeholder,
 #message::placeholder {
   color: #6c757d;
+}
 
 .list-container h4 {
   margin: 0 0 0 1rem;
